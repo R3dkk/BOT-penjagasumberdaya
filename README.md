@@ -52,7 +52,7 @@ Semua perintah berikut dapat dikirim langsung di dalam grup/chat tempat bot berg
 ├── .github/workflows/
 │   ├── deploy.yml            # Auto-deployment ke DOM Cloud via push
 │   └── keep-alive.yml        # Cron pinger 10 menit sekali via GitHub Action
-├── auth_info_baileys/        # Data kredensial login WhatsApp (Jangan dicommit!)
+├── auth_info_baileys/        # Data kredensial login WhatsApp
 ├── app.js                    # Entry point DOM Cloud (Passenger)
 ├── index.js                  # Logika utama Bot & Web Server
 ├── package.json              # Daftar dependensi modul Node.js
@@ -110,12 +110,6 @@ Agar bot tetap aktif 24/7 di DOM Cloud:
    - **Name:** `BOT_URL`
    - **Value:** `https://domain-bot-anda.dom.my.id` (isi dengan URL domain DOM Cloud Anda tanpa garis miring di akhir).
 4. GitHub Actions `keep-alive.yml` otomatis akan berjalan setiap 10 menit untuk memicu endpoint `/health` bot Anda, menjamin bot tidak akan pernah tertidur!
-
----
-
-## 📄 Lisensi
-
-Proyek ini dilisensikan di bawah **ISC License**. Bebas dimodifikasi dan didistribusikan kembali untuk kenyamanan kelas bersama!
 
 ---
 💡 *Selalu pastikan AC dan lampu dalam keadaan mati sebelum meninggalkan kelas untuk bumi yang lebih hijau!* 🌍💡
